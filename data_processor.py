@@ -27,3 +27,17 @@ with open(DATA_PATH, 'r') as file:
         # capture all of the timestamps in the order they appear in the log
         timestamp = re.search(TIMESTAMP_PATTERN, line)
         timestamps = np.append(timestamps, int(timestamp.group(1))) # type: ignore
+
+# normalize timestamps to all be in nanoseconds after first execution
+normalized_timestamps = timestamps - timestamps[0]
+
+# create ending timestamps with the start of the next event
+ending_timestamps = normalized_timestamps[1:]
+ending_timestamps = np.append(ending_timestamps, ending_timestamps[-1]) # for now I will have the last event be of length 0. A more accurate metric would be to calculate the program termination time
+
+# calculate time delta for the amount of time each event is running
+diffs = ending_timestamps - normalized_timestamps
+
+# build a dataframe with the IDs, states, start time, end time, and time delta
+data_dict = {'id': request_ids, 'state': actions, 'start': normalized_timestamps, 'end': ending_timestamps, 'diff': diffs}
+df = pd.DataFrame(data_dict)
