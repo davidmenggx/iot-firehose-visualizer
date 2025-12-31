@@ -2,9 +2,10 @@ import re
 
 import numpy as np
 import pandas as pd
+import plotly.express as px
 
 RAW_DATA_PATH = 'data/raw/'
-FILENAME = 'five_connections_log.txt'
+FILENAME = 'seven_connections_log.txt'
 DATA_PATH = RAW_DATA_PATH + FILENAME
 
 REQUEST_ID_PATTERN = r'Request ID (\d+)'
@@ -39,5 +40,25 @@ ending_timestamps = np.append(ending_timestamps, ending_timestamps[-1]) # for no
 diffs = ending_timestamps - normalized_timestamps
 
 # build a dataframe with the IDs, states, start time, end time, and time delta
-data_dict = {'id': request_ids, 'state': actions, 'start': normalized_timestamps, 'end': ending_timestamps, 'diff': diffs}
+data_dict = {'Id': request_ids, 'State': actions, 'Start': normalized_timestamps, 'End': ending_timestamps, 'Diff': diffs}
 df = pd.DataFrame(data_dict)
+
+# create a horizontal execution trace of the database actions
+fig = px.bar(
+    df, 
+    x='Diff',
+    y='Id',
+    base='Start',
+    orientation='h',
+    color='State',
+    labels={"Diff": "Duration (ns)", "Start": "Start Time (ns)"},
+    title='Execution Trace of Database Actions'
+)
+
+fig.update_layout(
+    xaxis_title='Time after execution (Nanoseconds)',
+    yaxis_title='Request ID',
+    xaxis=dict(tickformat=".0f")
+)
+
+fig.show()
