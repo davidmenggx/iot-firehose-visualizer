@@ -1,0 +1,60 @@
+DEBUG:iot-firehose-logger:Request ID 1 about to acquire connection at time 1767206720319648800
+DEBUG:iot-firehose-logger:Request ID 5 about to acquire connection at time 1767206720320270300
+DEBUG:iot-firehose-logger:Request ID 4 about to acquire connection at time 1767206720320628200
+DEBUG:iot-firehose-logger:Request ID 3 about to acquire connection at time 1767206720320885900
+DEBUG:iot-firehose-logger:Request ID 9 about to acquire connection at time 1767206720321957000
+DEBUG:iot-firehose-logger:Request ID 6 about to acquire connection at time 1767206720323054700
+DEBUG:iot-firehose-logger:Request ID 2 about to acquire connection at time 1767206720324558300
+DEBUG:iot-firehose-logger:Request ID 7 about to acquire connection at time 1767206720324934600
+DEBUG:iot-firehose-logger:Request ID 8 about to acquire connection at time 1767206720325197100
+DEBUG:iot-firehose-logger:Request ID 1 beginning execution at time 1767206720325649600
+DEBUG:iot-firehose-logger:Request ID 4 beginning execution at time 1767206720326030100
+DEBUG:iot-firehose-logger:Request ID 3 beginning execution at time 1767206720326524200
+DEBUG:iot-firehose-logger:Request ID 9 beginning execution at time 1767206720326704900
+DEBUG:iot-firehose-logger:Request ID 5 beginning execution at time 1767206720326895900
+DEBUG:iot-firehose-logger:Request ID 6 beginning execution at time 1767206720327099800
+DEBUG:iot-firehose-logger:Request ID 2 beginning execution at time 1767206720327168500
+DEBUG:iot-firehose-logger:Request ID 7 beginning execution at time 1767206720327262900
+DEBUG:iot-firehose-logger:Request ID 8 beginning execution at time 1767206720327412800
+DEBUG:iot-firehose-logger:Request ID 10 about to acquire connection at time 1767206720329481800
+DEBUG:iot-firehose-logger:Request ID 4 finished execution at time 1767206720329699700
+DEBUG:iot-firehose-logger:Request ID 3 finished execution at time 1767206720329779400
+DEBUG:iot-firehose-logger:Request ID 9 finished execution at time 1767206720329825200
+DEBUG:iot-firehose-logger:Request ID 5 finished execution at time 1767206720329915500
+DEBUG:iot-firehose-logger:Request ID 6 finished execution at time 1767206720329992200
+DEBUG:iot-firehose-logger:Request ID 2 finished execution at time 1767206720330063300
+DEBUG:iot-firehose-logger:Request ID 7 finished execution at time 1767206720330106100
+DEBUG:iot-firehose-logger:Request ID 1 finished execution at time 1767206720330209100
+DEBUG:iot-firehose-logger:Request ID 10 beginning execution at time 1767206720330612100
+DEBUG:iot-firehose-logger:Request ID 4 finalized transaction at time 1767206720330731300
+DEBUG:iot-firehose-logger:Request ID 8 finished execution at time 1767206720331829400
+DEBUG:iot-firehose-logger:Request ID 3 finalized transaction at time 1767206720332509300
+DEBUG:iot-firehose-logger:Request ID 9 finalized transaction at time 1767206720332604000
+DEBUG:iot-firehose-logger:Request ID 5 finalized transaction at time 1767206720332642100
+DEBUG:iot-firehose-logger:Request ID 6 finalized transaction at time 1767206720332669300
+DEBUG:iot-firehose-logger:Request ID 2 finalized transaction at time 1767206720332693000
+DEBUG:iot-firehose-logger:Request ID 7 finalized transaction at time 1767206720332713700
+DEBUG:iot-firehose-logger:Request ID 1 finalized transaction at time 1767206720332735800
+DEBUG:iot-firehose-logger:Request ID 4 releasing connection at time 1767206720333471400
+DEBUG:iot-firehose-logger:Request ID 4 successfully logged at time 1767206720333529400
+DEBUG:iot-firehose-logger:Request ID 8 finalized transaction at time 1767206720333932000
+DEBUG:iot-firehose-logger:Request ID 10 finished execution at time 1767206720334163000
+DEBUG:iot-firehose-logger:Request ID 3 releasing connection at time 1767206720334388800
+DEBUG:iot-firehose-logger:Request ID 3 successfully logged at time 1767206720334434200
+DEBUG:iot-firehose-logger:Request ID 9 releasing connection at time 1767206720334844900
+DEBUG:iot-firehose-logger:Request ID 9 successfully logged at time 1767206720334887900
+DEBUG:iot-firehose-logger:Request ID 5 releasing connection at time 1767206720335176500
+DEBUG:iot-firehose-logger:Request ID 5 successfully logged at time 1767206720335250300
+DEBUG:iot-firehose-logger:Request ID 6 releasing connection at time 1767206720335512000
+DEBUG:iot-firehose-logger:Request ID 6 successfully logged at time 1767206720335541100
+DEBUG:iot-firehose-logger:Request ID 2 releasing connection at time 1767206720335751100
+DEBUG:iot-firehose-logger:Request ID 2 successfully logged at time 1767206720335791200
+DEBUG:iot-firehose-logger:Request ID 7 releasing connection at time 1767206720336037400
+DEBUG:iot-firehose-logger:Request ID 7 successfully logged at time 1767206720336073200
+DEBUG:iot-firehose-logger:Request ID 1 releasing connection at time 1767206720336328800
+DEBUG:iot-firehose-logger:Request ID 1 successfully logged at time 1767206720336364300
+DEBUG:iot-firehose-logger:Request ID 8 releasing connection at time 1767206720336603400
+DEBUG:iot-firehose-logger:Request ID 8 successfully logged at time 1767206720336639200
+DEBUG:iot-firehose-logger:Request ID 10 finalized transaction at time 1767206720336834700
+DEBUG:iot-firehose-logger:Request ID 10 releasing connection at time 1767206720337232400
+DEBUG:iot-firehose-logger:Request ID 10 successfully logged at time 1767206720337272800

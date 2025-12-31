@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
-RAW_DATA_PATH = 'data/raw/'
-FILENAME = 'seven_connections_log.txt'
+RAW_DATA_PATH = 'data/'
+FILENAME = 'ten_connections_log.txt'
 DATA_PATH = RAW_DATA_PATH + FILENAME
 
 REQUEST_ID_PATTERN = r'Request ID (\d+)'
