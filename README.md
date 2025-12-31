@@ -1,4 +1,4 @@
-This notebook visualizes the execution trace in nanoseconds after execution of the [iot-firehose]([url](https://github.com/davidmenggx/iot-firehose)) /readings/slow/pooling API endpoint for any number of concurrent users. 
+This notebook visualizes the execution trace in nanoseconds after execution of the [iot-firehose](https://github.com/davidmenggx/iot-firehose) /readings/slow/pooling API endpoint for any number of concurrent users. 
 
 The /readings/slow/pooling endpoint uses an asyncpg connection pool to write to a PostgreSQL database. I use the logging module to capture the timestamp of seven critical execution events including acquiring the connection pool, beginning the database transaction, finishing the database transaction, releasing the connection pool, and returning a success message. 
 
@@ -14,3 +14,4 @@ Execution trace with 10 concurrent requests:
 
 Execution trace with 25 concurrent requests:
 <img width="1424" height="715" alt="twentyfive_executions" src="https://github.com/user-attachments/assets/0acd89a2-ea0f-46a4-ae7f-2f73059eec3f" />
+
